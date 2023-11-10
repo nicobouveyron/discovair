@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'discovair';
-
-  nav_is_open = false;
 }

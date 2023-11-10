@@ -1,12 +1,1 @@
-<nav [ngClass]="{ open: nav_is_open }">
-  <ul>
-    <li>Map</li>
-    <li>Challenge</li>
-    <li>Shorts</li>
-  </ul>
-  <button id="toggle-side-nav" (click)="nav_is_open = !nav_is_open">x</button>
-</nav>
-
-<div class="map">
-  <dr-map (onClickSpot)="nav_is_open = !nav_is_open"></dr-map>
-</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,11 @@
+<nav [ngClass]="{ open: nav_is_open }">
+  <ul>
+    <li>Map</li>
+    <li>Challenge</li>
+    <li>Shorts</li>
+  </ul>
+  <button id="toggle-side-nav" (click)="nav_is_open = !nav_is_open">x</button>
+</nav>
+
+<app-side-menu></app-side-menu>
+<router-outlet></router-outlet>
