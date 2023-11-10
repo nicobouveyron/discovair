@@ -1,6 +1,6 @@
 nav {
   position: absolute;
-  z-index: 1000;
+  z-index: 2000;
 
   padding: 30px;
   width: 400px;
@@ -53,3 +53,19 @@ nav {
   cursor: pointer;
 }
 // f99d3e
+
+.discovair-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+
+  overflow: hidden;
+
+  .content {
+    position: relative;
+    flex: 1;
+    overflow: auto;
+    padding: 30px;
+  }
+}

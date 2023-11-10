@@ -66,6 +66,12 @@ export class DrMapComponent implements OnInit {
     const lyonMarker = L.marker([45.75, 4.85]).addTo(map);
     lyonMarker.bindPopup('Lyon, France').openPopup();
 
+    const layerControl = L.control
+      .layers(undefined, undefined, {
+        position: 'bottomright',
+      })
+      .addTo(map);
+
     // Parcourir le tableau et ajouter des marqueurs
     this.service.spots.data.forEach((location) => {
       const [latitude, longitude] = location.coordinates;

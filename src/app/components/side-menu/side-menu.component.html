@@ -1,7 +1,11 @@
 <nav>
   <ul>
-    <li>Spots</li>
-    <li>Pulses</li>
-    <li>Communauté</li>
+    @for (item of menu_items; track $index) {
+    <li>
+      <div class="btn" [routerLink]="item.link">
+        <mat-icon>{{ item.icon }}</mat-icon>
+      </div>
+    </li>
+    }
   </ul>
 </nav>

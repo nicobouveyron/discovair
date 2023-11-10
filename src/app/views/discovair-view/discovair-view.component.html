@@ -7,5 +7,9 @@
   <button id="toggle-side-nav" (click)="nav_is_open = !nav_is_open">x</button>
 </nav>
 
-<app-side-menu></app-side-menu>
-<router-outlet></router-outlet>
+<div class="discovair-container">
+  <app-side-menu></app-side-menu>
+  <section class="content">
+    <router-outlet></router-outlet>
+  </section>
+</div>
