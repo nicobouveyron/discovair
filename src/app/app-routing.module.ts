@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { LandingPageViewComponent } from './views/landing-page-view/landing-page-view.component';
 import { DiscovairViewComponent } from './views/discovair-view/discovair-view.component';
-import { DashboardViewComponent } from './views/discovair-view/dashboard-view/dashboard-view.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageViewComponent },
+  {
+    path: 'auth',
+    loadChildren: () =>
+      import('./modules/auth/auth.module').then((m) => m.AuthModule),
+  },
 
   {
     path: 'app',
